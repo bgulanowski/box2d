@@ -146,6 +146,8 @@
 		80BB8A77141C3F7600F1753A /* libGLUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BB8901141C3E1800F1753A /* libGLUI.a */; };
 		80BB8A79141C3F9C00F1753A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BB8A78141C3F9C00F1753A /* GLUT.framework */; };
 		80BB8A7B141C3FA700F1753A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BB8A7A141C3FA700F1753A /* OpenGL.framework */; };
+		B61AC38515893CBF005A7467 /* b2MotorJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B61AC38315893CBF005A7467 /* b2MotorJoint.cpp */; };
+		B61AC38615893CBF005A7467 /* b2MotorJoint.h in Headers */ = {isa = PBXBuildFile; fileRef = B61AC38415893CBF005A7467 /* b2MotorJoint.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -388,6 +390,8 @@
 		80BB8A7A141C3FA700F1753A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		80CD7722143AF3230086DB87 /* ConvexHull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvexHull.h; sourceTree = "<group>"; };
 		80FF01D2141C3D980059E59D /* libBox2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61AC38315893CBF005A7467 /* b2MotorJoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2MotorJoint.cpp; sourceTree = "<group>"; };
+		B61AC38415893CBF005A7467 /* b2MotorJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2MotorJoint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -549,6 +553,8 @@
 		80BB896D141C3E5900F1753A /* Joints */ = {
 			isa = PBXGroup;
 			children = (
+				B61AC38315893CBF005A7467 /* b2MotorJoint.cpp */,
+				B61AC38415893CBF005A7467 /* b2MotorJoint.h */,
 				80BB896E141C3E5900F1753A /* b2DistanceJoint.cpp */,
 				80BB896F141C3E5900F1753A /* b2DistanceJoint.h */,
 				80BB8970141C3E5900F1753A /* b2FrictionJoint.cpp */,
@@ -809,6 +815,7 @@
 				80BB89DD141C3E5900F1753A /* b2WeldJoint.h in Headers */,
 				80BB89DF141C3E5900F1753A /* b2WheelJoint.h in Headers */,
 				80BB89E1141C3E5900F1753A /* b2Rope.h in Headers */,
+				B61AC38615893CBF005A7467 /* b2MotorJoint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,6 +898,9 @@
 /* Begin PBXProject section */
 		80FF01C9141C3D980059E59D /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
 			buildConfigurationList = 80FF01CC141C3D980059E59D /* Build configuration list for PBXProject "Box2D" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -1019,6 +1029,7 @@
 				80BB89DC141C3E5900F1753A /* b2WeldJoint.cpp in Sources */,
 				80BB89DE141C3E5900F1753A /* b2WheelJoint.cpp in Sources */,
 				80BB89E0141C3E5900F1753A /* b2Rope.cpp in Sources */,
+				B61AC38515893CBF005A7467 /* b2MotorJoint.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
