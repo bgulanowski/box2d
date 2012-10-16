@@ -182,7 +182,7 @@ public:
 		bd.type = b2_dynamicBody;
 
 		float32 x = RandomFloat(-2.0f, 2.0f);
-		bd.position.Set(x, 10.0f);
+		bd.position.Set(x, 40.0f);
 		bd.angle = RandomFloat(-b2_pi, b2_pi);
 
 		if (index == 4)
